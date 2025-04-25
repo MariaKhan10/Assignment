@@ -113,7 +113,7 @@ st.markdown("""<style>
 
 .description {
     font-size: 1rem;
-    color: #d1b5e9; /* Changed to white for better visibility on dark background */
+    color: #3a1b9c; /* Changed to white for better visibility on dark background */
     text-align: center;
     margin-bottom: 1.5rem;
 }
