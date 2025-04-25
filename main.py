@@ -1,7 +1,6 @@
 # -------------------- Imports --------------------
 import streamlit as st
 import os
-import speech_recognition as sr
 from datetime import datetime
 from dotenv import load_dotenv
 from deep_translator import GoogleTranslator
