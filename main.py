@@ -52,7 +52,7 @@ class MedicalAnalyzer:
 # This class inherits from MedicalAnalyzer and reuses its interface.
 class GeminiAnalyzer(MedicalAnalyzer):
     def get_diagnosis(self, symptoms):
-        model = genai.GenerativeModel("models/gemini-1.5-pro-latest")
+        model = genai.GenerativeModel("models/gemini-1.5-flash")
         prompt = f"""
         A user has reported the following symptoms: {symptoms}.
         1. What could be the possible diagnosis?
@@ -113,7 +113,7 @@ st.markdown("""<style>
 
 .description {
     font-size: 1rem;
-    color: #fff; /* Changed to white for better visibility on dark background */
+    color: #d1b5e9; /* Changed to white for better visibility on dark background */
     text-align: center;
     margin-bottom: 1.5rem;
 }
@@ -219,7 +219,7 @@ if st.session_state.get("final_result"):
             if followup.strip():
                 st.session_state["followup_query"] = followup
                 with st.spinner("Thinking..."):
-                    response = genai.GenerativeModel("models/gemini-1.5-pro-latest").generate_content(
+                    response = genai.GenerativeModel("models/gemini-1.5-flash").generate_content(
                         f"User asked: '{followup}'\nBased on earlier diagnosis: '{st.session_state['final_result']}'\nRespond clearly and helpfully."
                     )
                     st.session_state["followup_response"] = response.text
