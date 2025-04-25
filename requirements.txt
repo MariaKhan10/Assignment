@@ -1,0 +1,8 @@
+streamlit
+google-generativeai
+python-dotenv
+speechrecognition
+gTTS
+PyPDF2
+google-cloud-firestore
+translate
