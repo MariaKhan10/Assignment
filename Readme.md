@@ -20,15 +20,15 @@ SehatBot is an AI-powered medical assistant web app built with **Streamlit** and
 1. Clone the Repository
 
 2. Set Up Virtual Environment (Optional but Recommended)
-   On Windows: venv\Scripts\activate
+   --  On Windows: venv\Scripts\activate
 
 3. Install Dependencies
-   pip install -r requirements.txt
+   --  pip install -r requirements.txt
 
 4. Add Your .env File
 
 5. Run the App
-   streamlit run main.py
+   --  streamlit run main.py
 
 
 
